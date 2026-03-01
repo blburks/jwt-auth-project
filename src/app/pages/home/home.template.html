@@ -1,0 +1,7 @@
+<h1>Home Page</h1>
+
+<p>Your role: {{ role }}</p>
+
+@if (role === 'admin') {
+  <button routerLink="/admin">Admin Panel</button>
+}

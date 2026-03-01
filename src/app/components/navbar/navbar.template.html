@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <a routerLink="/">Home</a>
+
+  @if (loggedIn) {
+    <a routerLink="/dashboard">Dashboard</a>
+  }
+
+  @if (role === 'admin') {
+    <a routerLink="/admin">Admin Panel</a>
+  }
+
+  @if (!loggedIn) {
+    <a routerLink="/login">Login</a>
+  }
+
+  @if (loggedIn) {
+    <button (click)="logout()">Logout</button>
+  }
+</nav>

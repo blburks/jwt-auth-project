@@ -1,0 +1,9 @@
+<h1>Admin Panel</h1>
+
+<p>Welcome, admin.</p>
+
+<p>Your role: {{ role }}</p>
+
+@if (role !== 'admin') {
+  <p>You should not be here.</p>
+}

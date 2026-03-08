@@ -26,3 +26,4 @@ export class NavbarComponent {
     this.auth.logout();
     window.location.href = '/login';
   }
+}

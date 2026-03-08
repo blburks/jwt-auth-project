@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AuthMockServerService } from './auth-mock-server.service';'
+import { AuthMockServerService } from './auth-mock-server.service';
 
 @Injectable({
   providedIn: 'root',
